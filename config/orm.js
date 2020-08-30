@@ -1,12 +1,10 @@
 //selectAll()
-
 //updateOne()
 //Export the ORM object in module.exports.
-
-
-
 // Import MySQL connection.
 var connection = require("../config/connection.js");
+const { query } = require("express");
+
 
 // Helper function for SQL syntax.
 
@@ -90,19 +88,7 @@ var orm = {
 
       cb(result);
     });
-  },
-  delete: function(table, condition, cb) {
-    var queryString = "DELETE FROM " + table;
-    queryString += " WHERE ";
-    queryString += condition;
-
-    connection.query(queryString, function(err, result) {
-      if (err) {
-        throw err;
-      }
-
-      cb(result);
-    });
+ 
   }
 };
 

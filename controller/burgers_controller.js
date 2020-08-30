@@ -30,6 +30,7 @@ router.post("/burgers", function(req, res) {
     ], [
         req.body.burger_name, req.body.devoured
     ], function(result) {
+        //send back the ID of the new quote
         res.json({ id: result.insertId });
     });
 });
