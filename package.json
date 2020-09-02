@@ -1,10 +1,19 @@
 {
   "name": "burger",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Burger is an application designed to add and \"Devour\" any burger the user wants. The design of this app is based off of the popular tv show Bob's Burgers.",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "method-override": "^3.0.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -15,10 +24,5 @@
   "bugs": {
     "url": "https://github.com/hema0618/Burger/issues"
   },
-  "homepage": "https://github.com/hema0618/Burger#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "express-handlebars": "^5.1.0",
-    "mysql": "^2.18.1"
-  }
+  "homepage": "https://github.com/hema0618/Burger#readme"
 }
